@@ -10,3 +10,42 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
+
+.container{
+  position: relative;
+  width: 1024px;
+  height: 768px;
+  transform: rotate(-90deg) translateX(-768px);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* background-image: url(./img/bg.png); */
+}
+
+.slide {
+  width: 1024px;
+  height: 768px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 3072px;
+  transform: rotate(90deg) translateY(-768px);
+  transform-origin: top left;
+  background-image: url(./img/bg.jpg);
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.first-component{
+  /* background-color: brown; */
+}
+
+.second-component{
+  /* background-color: cadetblue; */
+}
+
+.third-component{
+  /* background-color: chartreuse */
+}
