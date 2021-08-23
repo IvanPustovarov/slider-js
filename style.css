@@ -1,51 +1,66 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+  display: flex;
+  height: 768px;
 }
 
-.container{
+.container {
   position: relative;
-  width: 1024px;
-  height: 768px;
+  width: 768px;
+  height: 1024px;
   transform: rotate(-90deg) translateX(-768px);
   transform-origin: top left;
   overflow-y: scroll;
   overflow-x: hidden;
-  /* background-image: url(./img/bg.png); */
 }
 
 .slide {
   width: 1024px;
   height: 768px;
+  display: grid;
+  justify-content: start;
+  align-items: start;
+  padding-left: 70px;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: row;
   width: 3072px;
   transform: rotate(90deg) translateY(-768px);
   transform-origin: top left;
-  background-image: url(./img/bg.jpg);
-  background-repeat: repeat;
-  background-position: center;
+  background-image: url(./img/bg.png);
+  background-size: 110%;
 }
 
-.first-component{
+.logo {
+  width: 306px;
+  height: 51px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+}
+
+.img_logo {
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.first-component {
   /* background-color: brown; */
 }
 
-.second-component{
+.second-component {
   /* background-color: cadetblue; */
 }
 
-.third-component{
+.third-component {
   /* background-color: chartreuse */
 }
